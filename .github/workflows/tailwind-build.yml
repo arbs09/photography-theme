@@ -1,0 +1,33 @@
+name: Build Tailwind CSS
+
+on:
+  push:
+    paths:
+      - 'input.css'
+      - '**.html'
+  workflow_dispatch:
+
+jobs:
+  build-tailwind:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Tailwind CLI
+        run: npm install --no-save @tailwindcss/cli
+
+      - name: Build Tailwind CSS
+        run: npx @tailwindcss/cli -i input.css -o ./static/style.css --minify
+
+      - name: Commit and Push compiled CSS
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Build Tailwind CSS output"
+          file_pattern: './static/style.css'

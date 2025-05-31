@@ -1,0 +1,14 @@
+name = "photography theme"
+description = "a theme for a photography portfolio"
+license = "MIT"
+homepage = "ttps://github.com/arbs09/photography-theme"
+
+[extra]
+copyright = ""
+footer_links = []
+nav_links = []
+home_links = []
+
+[author]
+name = "arbs09"
+homepage = "https://arbs09.dev"
