@@ -5,9 +5,9 @@ homepage = "ttps://github.com/arbs09/photography-theme"
 
 [extra]
 copyright = ""
-footer_links = []
-nav_links = []
 home_links = []
+nav_links = []
+footer_links = []
 
 [author]
 name = "arbs09"

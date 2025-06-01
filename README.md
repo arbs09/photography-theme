@@ -1,5 +1,7 @@
 # photography website theme
 
+![screenshot](screenshot.png)
+
 ## Installation
 
 Initialise git:
@@ -27,4 +29,33 @@ Just run:
 
 ```bash
 git submodule update --remote --merge
+```
+
+## Configuration
+
+### Options
+
+#### home / nav / footer links
+You can edit the links on the homepage, in the nav and footer.
+
+```toml
+[extra]
+home_links = [
+    {url = "https://example.com", name = "Example"},
+]
+nav_links = [
+    {url = "https://example.com", name = "Example"},
+]
+footer_links = [
+    {url = "https://example.com", name = "Example"},
+]
+```
+
+#### Copyright
+
+For editing the copyright in the footer just use this:
+
+```toml
+[extra]
+copyright = "Example"
 ```

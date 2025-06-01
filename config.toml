@@ -1,0 +1,13 @@
+base_url = "https://example.com"
+title = "photography theme"
+description = "a theme for a photography portfolio"
+
+[extra]
+copyright = "arbs09"
+footer_links = []
+nav_links = [
+    {url = "https://github.com/arbs09/photography-theme", name = "Github"},
+]
+home_links = [
+    {url = "https://github.com/arbs09/photography-theme", name = "Github"},
+]
