@@ -1,11 +1,15 @@
-<div class="relative max-w-2xl mx-auto pb-10">
-  <img src="{{ img }}" alt="{{ caption }}" class="w-full rounded-xl shadow-lg block">
+<div class="relative max-w-2xl mx-auto pb-5">
+  <img src="{{ img }}" {% if caption }alt="{{ caption }}"{% endif %} class="w-full rounded-xl shadow-lg block" loading="lazy">
 
+  {% if date %}
   <div class="absolute top-2 right-3 text-gray-700 text-sm drop-shadow">
     {{ date }}
   </div>
+  {% endif %}
 
+  {% if caption %}
   <p class=" text-center text-gray-700 text-sm">
     {{ caption }}
   </p>
+  {% endif %}
 </div>
