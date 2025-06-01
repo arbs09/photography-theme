@@ -1,7 +1,8 @@
 name = "photography theme"
 description = "a theme for a photography portfolio"
 license = "MIT"
-homepage = "ttps://github.com/arbs09/photography-theme"
+min_version = "0.19.2"
+homepage = "https://github.com/arbs09/photography-theme"
 
 [extra]
 copyright = ""
