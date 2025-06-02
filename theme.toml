@@ -2,6 +2,7 @@ name = "photography theme"
 description = "a theme for a photography portfolio"
 license = "MIT"
 min_version = "0.19.2"
+tags = ["Blog"]
 homepage = "https://github.com/arbs09/photography-theme"
 
 [extra]
