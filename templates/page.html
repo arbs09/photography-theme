@@ -1,5 +1,9 @@
 {% extends "base.html" %}
 
+{% if page.description %}
+{% block description %}{{ page.description }}{% endblock description %}
+{% endif %}
+
 {% block content %}
 <h1 class="text-center text-gray-300 text-4xl pt-10 font-bold">
   {% block title %}{{ page.title }}{% endblock title %}

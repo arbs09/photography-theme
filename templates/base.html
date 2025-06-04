@@ -6,6 +6,8 @@
 
         <title>{% block title %}{{ config.title }}{% endblock title %}</title>
     
+        <meta name="description" content="{% block description %}{{ config.description }}{% endblock description %}" />
+
         <link rel="stylesheet" href="{{ get_url(path="style.css") | safe }}" />
 
         {% if is_404 or page.extra.hidden %}
