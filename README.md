@@ -59,3 +59,12 @@ For editing the copyright in the footer just use this:
 [extra]
 copyright = "Example"
 ```
+
+#### Ai opt-out
+
+If you want to opt out of (some) Ai Bots crawling your site you can add the following to your config.toml.
+
+```toml
+[extra]
+no_ai = true
+```
