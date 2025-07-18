@@ -11,3 +11,4 @@ nav_links = [
 home_links = [
     {url = "https://github.com/arbs09/photography-theme", name = "Github"},
 ]
+no_ai = true
