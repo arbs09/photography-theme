@@ -10,6 +10,7 @@ copyright = ""
 home_links = []
 nav_links = []
 footer_links = []
+no_ai = true
 
 [author]
 name = "arbs09"
